@@ -13,7 +13,7 @@ public class Main {
         System.out.println("-----------------------------------------------------------------");
 
         double convertTipPercent = tipPercent / 100;
-        double totalTips = billAmount * (convertTipPercent + 1);
+        double totalTips = billAmount * convertTipPercent;
         double totalBill = billAmount + totalTips;
         double tipsPerPerson = totalTips / peopleCount;
         double totalPerPerson = totalBill / peopleCount;
